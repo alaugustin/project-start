@@ -13,6 +13,11 @@ const publicDirectory = path.join(__dirname, 'public');
 
 let liveReloadServer = liveReload.createServer();
 liveReloadServer.watch(publicDirectory);
+liveReloadServer.server.once("connection", () => {
+  setTimeout(() => {
+    liveReloadServer.refresh("/");
+  }, 100);
+});
 
 var app = express();
 
