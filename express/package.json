@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "watch": "nodemon"
   },
   "dependencies": {
     "connect-livereload": "^0.6.1",
@@ -13,6 +14,7 @@
     "hbs": "^4.2.0",
     "http-errors": "~1.6.3",
     "livereload": "^0.9.3",
-    "morgan": "~1.9.1"
+    "morgan": "~1.9.1",
+    "nodemon": "^2.0.15"
   }
 }
